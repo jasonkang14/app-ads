@@ -28,7 +28,3 @@ Hosted via GitHub Pages at **[app.kangsium.com](https://app.kangsium.com)**.
 This is a single static HTML file with inline CSS — no build step. Edit `index.html`
 directly and open it in a browser to preview. Changes pushed to `main` deploy
 automatically via GitHub Pages.
-
-## Contact
-
-[jason@kangsium.com](mailto:jason@kangsium.com)
