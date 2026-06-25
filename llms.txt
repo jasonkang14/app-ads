@@ -1,0 +1,20 @@
+# Kangsium
+
+> Kangsium makes simple, polished, offline-friendly indie mobile games for Android. Every title is free, quick to pick up, and available on Google Play.
+
+## Games
+
+- [Memory Match](https://play.google.com/store/apps/details?id=com.kangsium.memory_match): Classic memory matching with 5 difficulty levels and 5 emoji themes.
+- [Cactus Hop](https://play.google.com/store/apps/details?id=com.kangsium.cactus_hop): One-tap endless dodger — hop a cute fox over cacti and unlock more hoppers by score.
+- [Neon Bricks](https://play.google.com/store/apps/details?id=com.kangsium.neonbricks): Retro brick-breaker with glowing neon visuals, power-ups, and offline play.
+- [Neon Snake](https://play.google.com/store/apps/details?id=com.kangsium.neonsnake): Classic snake in neon-arcade style with Easy, Normal, and Hard modes.
+- [Color Match Tap](https://play.google.com/store/apps/details?id=com.kangsium.colormatchtap): Fast-tap color-matching reaction game with 4 modes and 5 color themes.
+- [Fortune Cookie](https://play.google.com/store/apps/details?id=com.kangsium.fortunecookie): Tap to crack open a cookie and reveal your fortune — 100 fortunes, no repeats.
+- [Sky Stack](https://play.google.com/store/apps/details?id=com.kangsium.sky_stack): Pastel block-stacking timing game with Endless mode and a fresh Daily Challenge.
+- [Wordling](https://play.google.com/store/apps/details?id=com.kangsium.wordling): Fill-in-the-blank SAT vocabulary puzzles where you grow a slime pet as your streak climbs.
+- [Daily Glow](https://play.google.com/store/apps/details?id=com.kangsium.dailyglow): Tap to bloom a lotus and reveal a daily affirmation — a calm one-minute ritual.
+
+## Optional
+
+- [Privacy & Terms](https://policy.kangsium.com/): Privacy policies and terms of service for all Kangsium apps.
+- [Contact](mailto:jason@kangsium.com): Email jason@kangsium.com for questions or support.

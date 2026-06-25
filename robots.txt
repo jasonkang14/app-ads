@@ -1,0 +1,5 @@
+# https://app.kangsium.com/robots.txt
+User-agent: *
+Allow: /
+
+Sitemap: https://app.kangsium.com/sitemap.xml
