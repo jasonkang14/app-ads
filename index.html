@@ -47,6 +47,17 @@
         {"@type": "ListItem", "position": 8, "item": {"@type": "SoftwareApplication", "name": "Wordling", "applicationCategory": "GameApplication", "operatingSystem": "ANDROID", "url": "https://play.google.com/store/apps/details?id=com.kangsium.wordling", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}}},
         {"@type": "ListItem", "position": 9, "item": {"@type": "SoftwareApplication", "name": "Daily Glow", "applicationCategory": "GameApplication", "operatingSystem": "ANDROID", "url": "https://play.google.com/store/apps/details?id=com.kangsium.dailyglow", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}}}
       ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {"@type": "Question", "name": "Are Kangsium games free?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — every Kangsium game is free to download and play on Google Play. They are supported by ads, and no purchase is required to enjoy the full game."}},
+        {"@type": "Question", "name": "Do the games work offline?", "acceptedAnswer": {"@type": "Answer", "text": "Most Kangsium games run completely offline, so you can play on a plane, on the subway, or anywhere without an internet connection."}},
+        {"@type": "Question", "name": "Do I need to create an account?", "acceptedAnswer": {"@type": "Answer", "text": "No. There are no sign-ups or logins — open a game and start playing right away."}},
+        {"@type": "Question", "name": "What devices are supported?", "acceptedAnswer": {"@type": "Answer", "text": "Kangsium games are built for Android phones and tablets and are available worldwide on the Google Play Store."}},
+        {"@type": "Question", "name": "Are the games suitable for children?", "acceptedAnswer": {"@type": "Answer", "text": "Our games are made for a general audience and rated for ages 13 and up. They are simple and family-friendly, though they do display ads."}},
+        {"@type": "Question", "name": "How can I get support?", "acceptedAnswer": {"@type": "Answer", "text": "Email us at jason@kangsium.com with any question, bug report, or piece of feedback — we read every message."}}
+      ]
     }
   ]
 }
@@ -73,7 +84,7 @@
   }
   header {
     text-align: center;
-    padding: 4rem 1.5rem 2rem;
+    padding: 4rem 1.5rem 1rem;
   }
   header h1 {
     font-size: 2.5rem;
@@ -98,6 +109,40 @@
     margin: 0 auto;
     padding: 2rem 1.5rem 4rem;
   }
+  section { margin-top: 4rem; }
+  section:first-child { margin-top: 1rem; }
+  .section-title {
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: -0.01em;
+    margin-bottom: 0.5rem;
+  }
+  .section-sub {
+    color: var(--text-dim);
+    text-align: center;
+    max-width: 640px;
+    margin: 0 auto 2rem;
+  }
+  /* Intro / about */
+  .intro { max-width: 760px; margin: 0 auto; text-align: center; }
+  .intro p.lead { color: var(--text-dim); font-size: 1.05rem; margin: 0 auto; }
+  .values {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-top: 2rem;
+    text-align: left;
+  }
+  .value {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 1.25rem;
+  }
+  .value h3 { font-size: 1rem; font-weight: 600; margin-bottom: 0.3rem; }
+  .value p { color: var(--text-dim); font-size: 0.9rem; }
+  /* Game cards */
   .grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
@@ -128,7 +173,15 @@
     font-size: 1.75rem;
     margin-bottom: 1rem;
   }
-  .card h2 {
+  .card .genre {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-weight: 700;
+    color: var(--accent);
+    margin-bottom: 0.35rem;
+  }
+  .card h3 {
     font-size: 1.25rem;
     font-weight: 600;
     margin-bottom: 0.5rem;
@@ -136,11 +189,30 @@
   .card p {
     color: var(--text-dim);
     font-size: 0.95rem;
-    margin-bottom: 1.25rem;
+    margin-bottom: 1rem;
+  }
+  .card .features {
+    list-style: none;
+    margin: 0 0 1.25rem;
+    padding: 0;
     flex: 1;
   }
+  .card .features li {
+    color: var(--text-dim);
+    font-size: 0.85rem;
+    position: relative;
+    padding-left: 1.2rem;
+    margin-bottom: 0.25rem;
+  }
+  .card .features li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: var(--accent);
+    font-weight: 700;
+  }
   .btn {
-    display: inline-block;
+    display: block;
     background: var(--accent);
     color: #001318;
     text-decoration: none;
@@ -149,15 +221,18 @@
     font-weight: 600;
     font-size: 0.9rem;
     text-align: center;
+    margin-top: auto;
     transition: opacity 0.15s;
   }
   .btn:hover { opacity: 0.85; }
-  .btn-disabled {
-    background: var(--border);
-    color: var(--text-dim);
-    cursor: not-allowed;
-    pointer-events: none;
-  }
+  /* FAQ */
+  .faq { max-width: 760px; margin: 0 auto; }
+  .faq-item { border-bottom: 1px solid var(--border); padding: 1.15rem 0; }
+  .faq-item:last-child { border-bottom: none; }
+  .faq-item h3 { font-size: 1.05rem; font-weight: 600; margin-bottom: 0.35rem; }
+  .faq-item p { color: var(--text-dim); font-size: 0.95rem; }
+  .faq-item a { color: var(--accent); text-decoration: none; }
+  /* Footer */
   footer {
     text-align: center;
     padding: 2rem 1.5rem;
@@ -165,7 +240,8 @@
     font-size: 0.875rem;
     border-top: 1px solid var(--border);
   }
-  footer a { color: var(--accent); text-decoration: none; }
+  footer .links { margin-bottom: 0.5rem; }
+  footer a { color: var(--accent); text-decoration: none; margin: 0 0.6rem; }
   footer a:hover { text-decoration: underline; }
 </style>
 </head>
@@ -176,74 +252,176 @@
   </header>
 
   <main>
-    <div class="grid">
-      <div class="card">
-        <div class="icon">🧠</div>
-        <h2>Memory Match</h2>
-        <p>Classic memory matching with 5 difficulty levels and 5 emoji themes.</p>
-        <a class="btn" href="https://play.google.com/store/apps/details?id=com.kangsium.memory_match">Get on Google Play</a>
+    <section class="intro">
+      <h2 class="section-title">Pick-up-and-play games for Android</h2>
+      <p class="lead">Kangsium is a small independent studio making simple, polished mobile games for Android. Every game is free to play, designed to be understood in seconds, and built to run smoothly offline — no accounts, no sign-ups, no clutter. We care about clean visuals, satisfying one-handed controls, and pick-up-and-play loops that fit into a spare minute. Browse the collection below; each title is available free on Google Play.</p>
+      <div class="values">
+        <div class="value"><h3>Always free</h3><p>Every game is free to download and play, supported by ads.</p></div>
+        <div class="value"><h3>Works offline</h3><p>No connection needed — play on a plane, a train, or anywhere.</p></div>
+        <div class="value"><h3>No sign-up</h3><p>Jump straight in. No accounts and no personal data to play.</p></div>
       </div>
+    </section>
 
-      <div class="card">
-        <div class="icon">🦊</div>
-        <h2>Cactus Hop</h2>
-        <p>One-tap endless dodger. Hop a cute fox over cacti. Unlock more hoppers by score.</p>
-        <a class="btn" href="https://play.google.com/store/apps/details?id=com.kangsium.cactus_hop">Get on Google Play</a>
-      </div>
+    <section>
+      <h2 class="section-title">Our Games</h2>
+      <p class="section-sub">Nine free titles spanning arcade, puzzle, word, and wellness — something for every spare minute.</p>
+      <div class="grid">
+        <div class="card">
+          <div class="icon">🧠</div>
+          <span class="genre">Puzzle · Memory</span>
+          <h3>Memory Match</h3>
+          <p>Flip cards two at a time and clear the board from memory. Five board sizes scale from a relaxed warm-up to a real memory workout, and five emoji theme packs keep every deck feeling fresh.</p>
+          <ul class="features">
+            <li>5 difficulty levels</li>
+            <li>5 emoji theme packs</li>
+            <li>Quick rounds, endless replay</li>
+          </ul>
+          <a class="btn" href="https://play.google.com/store/apps/details?id=com.kangsium.memory_match">Get on Google Play</a>
+        </div>
 
-      <div class="card">
-        <div class="icon">🧱</div>
-        <h2>Neon Bricks</h2>
-        <p>Retro brick-breaker with glowing neon visuals, power-ups, and offline play.</p>
-        <a class="btn" href="https://play.google.com/store/apps/details?id=com.kangsium.neonbricks">Get on Google Play</a>
-      </div>
+        <div class="card">
+          <div class="icon">🦊</div>
+          <span class="genre">Arcade · Endless</span>
+          <h3>Cactus Hop</h3>
+          <p>A one-tap endless dodger with a desert twist. Time each hop to clear oncoming cacti, push for a new high score, and unlock a whole menagerie of cute animal hoppers as your best run climbs.</p>
+          <ul class="features">
+            <li>One-tap controls</li>
+            <li>Score-gated animal skins</li>
+            <li>Endless high-score chase</li>
+          </ul>
+          <a class="btn" href="https://play.google.com/store/apps/details?id=com.kangsium.cactus_hop">Get on Google Play</a>
+        </div>
 
-      <div class="card">
-        <div class="icon">🐍</div>
-        <h2>Neon Snake</h2>
-        <p>Classic snake, neon-arcade style. Easy, Normal, Hard. Swipe. Score. Repeat.</p>
-        <a class="btn" href="https://play.google.com/store/apps/details?id=com.kangsium.neonsnake">Get on Google Play</a>
-      </div>
+        <div class="card">
+          <div class="icon">🧱</div>
+          <span class="genre">Arcade · Brick-breaker</span>
+          <h3>Neon Bricks</h3>
+          <p>The classic brick-breaker, reimagined in glowing neon. Bounce the ball to clear each layout and grab power-ups — multi-ball, wide paddle, and lasers — to punch through ever-tougher boards.</p>
+          <ul class="features">
+            <li>Multi-ball, wide-paddle &amp; laser power-ups</li>
+            <li>Glowing neon visuals</li>
+            <li>Plays fully offline</li>
+          </ul>
+          <a class="btn" href="https://play.google.com/store/apps/details?id=com.kangsium.neonbricks">Get on Google Play</a>
+        </div>
 
-      <div class="card">
-        <div class="icon">🎨</div>
-        <h2>Color Match Tap</h2>
-        <p>Fast-tap color matcher with 4 game modes and 5 color themes.</p>
-        <a class="btn" href="https://play.google.com/store/apps/details?id=com.kangsium.colormatchtap">Get on Google Play</a>
-      </div>
+        <div class="card">
+          <div class="icon">🐍</div>
+          <span class="genre">Arcade · Classic</span>
+          <h3>Neon Snake</h3>
+          <p>Guide the snake, eat, and grow without crashing into the walls or your own tail. A faithful take on the arcade classic, dressed up in crisp neon styling with three speed-based difficulty levels.</p>
+          <ul class="features">
+            <li>Easy, Normal &amp; Hard modes</li>
+            <li>Simple swipe controls</li>
+            <li>Retro neon look</li>
+          </ul>
+          <a class="btn" href="https://play.google.com/store/apps/details?id=com.kangsium.neonsnake">Get on Google Play</a>
+        </div>
 
-      <div class="card">
-        <div class="icon">🥠</div>
-        <h2>Fortune Cookie</h2>
-        <p>Tap to crack open a cookie and reveal your fortune. 100 fortunes, no repeats.</p>
-        <a class="btn" href="https://play.google.com/store/apps/details?id=com.kangsium.fortunecookie">Get on Google Play</a>
-      </div>
+        <div class="card">
+          <div class="icon">🎨</div>
+          <span class="genre">Reaction · Casual</span>
+          <h3>Color Match Tap</h3>
+          <p>A reaction game all about split-second focus: tap only when the shape's color matches the target. Four game modes and five color themes keep your reflexes honest the longer you play.</p>
+          <ul class="features">
+            <li>4 game modes</li>
+            <li>5 color themes</li>
+            <li>Reflex-training gameplay</li>
+          </ul>
+          <a class="btn" href="https://play.google.com/store/apps/details?id=com.kangsium.colormatchtap">Get on Google Play</a>
+        </div>
 
-      <div class="card">
-        <div class="icon">🗼</div>
-        <h2>Sky Stack</h2>
-        <p>Stack pastel blocks as high as you can. Endless mode plus a fresh Daily Challenge.</p>
-        <a class="btn" href="https://play.google.com/store/apps/details?id=com.kangsium.sky_stack">Get on Google Play</a>
-      </div>
+        <div class="card">
+          <div class="icon">🥠</div>
+          <span class="genre">Casual · Daily</span>
+          <h3>Fortune Cookie</h3>
+          <p>Tap three times to crack open a virtual cookie and reveal a little message for your day. A pool of 100 hand-written fortunes rotates with no repeats until you have seen them all.</p>
+          <ul class="features">
+            <li>100 unique fortunes</li>
+            <li>Three free cookies a day</li>
+            <li>A calm daily habit</li>
+          </ul>
+          <a class="btn" href="https://play.google.com/store/apps/details?id=com.kangsium.fortunecookie">Get on Google Play</a>
+        </div>
 
-      <div class="card">
-        <div class="icon">🔤</div>
-        <h2>Wordling</h2>
-        <p>Fill-in-the-blank SAT vocab puzzles. Grow a slime pet as your word streak climbs.</p>
-        <a class="btn" href="https://play.google.com/store/apps/details?id=com.kangsium.wordling">Get on Google Play</a>
-      </div>
+        <div class="card">
+          <div class="icon">🗼</div>
+          <span class="genre">Arcade · Timing</span>
+          <h3>Sky Stack</h3>
+          <p>Tap to drop each block and stack a tower as high as your timing allows — miss the alignment and your tower narrows. Play Endless to beat your best, or take on a fresh Daily Challenge.</p>
+          <ul class="features">
+            <li>Endless + Daily Challenge</li>
+            <li>One-tap timing gameplay</li>
+            <li>Soft pastel art style</li>
+          </ul>
+          <a class="btn" href="https://play.google.com/store/apps/details?id=com.kangsium.sky_stack">Get on Google Play</a>
+        </div>
 
-      <div class="card">
-        <div class="icon">🪷</div>
-        <h2>Daily Glow</h2>
-        <p>Tap to bloom a lotus and reveal a daily affirmation — a calm one-minute ritual.</p>
-        <a class="btn" href="https://play.google.com/store/apps/details?id=com.kangsium.dailyglow">Get on Google Play</a>
+        <div class="card">
+          <div class="icon">🔤</div>
+          <span class="genre">Word · Learning</span>
+          <h3>Wordling</h3>
+          <p>Sharpen your vocabulary with fill-in-the-blank puzzles built around SAT-level words. Keep your daily streak alive and watch your slime pet grow and evolve, Tamagotchi-style, as you learn.</p>
+          <ul class="features">
+            <li>SAT-level vocabulary</li>
+            <li>A slime pet that evolves</li>
+            <li>Daily learning streaks</li>
+          </ul>
+          <a class="btn" href="https://play.google.com/store/apps/details?id=com.kangsium.wordling">Get on Google Play</a>
+        </div>
+
+        <div class="card">
+          <div class="icon">🪷</div>
+          <span class="genre">Wellness · Daily</span>
+          <h3>Daily Glow</h3>
+          <p>A one-minute daily ritual: tap the glowing orb three times to bloom a lotus and reveal a positive affirmation. A pool of 100 hand-written affirmations encourages a small moment of calm each day.</p>
+          <ul class="features">
+            <li>100 hand-written affirmations</li>
+            <li>A calming daily ritual</li>
+            <li>Soft, soothing design</li>
+          </ul>
+          <a class="btn" href="https://play.google.com/store/apps/details?id=com.kangsium.dailyglow">Get on Google Play</a>
+        </div>
       </div>
-    </div>
+    </section>
+
+    <section>
+      <h2 class="section-title">Frequently Asked Questions</h2>
+      <div class="faq">
+        <div class="faq-item">
+          <h3>Are Kangsium games free?</h3>
+          <p>Yes — every Kangsium game is free to download and play on Google Play. They are supported by ads, and no purchase is required to enjoy the full game.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Do the games work offline?</h3>
+          <p>Most Kangsium games run completely offline, so you can play on a plane, on the subway, or anywhere without an internet connection.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Do I need to create an account?</h3>
+          <p>No. There are no sign-ups or logins — open a game and start playing right away.</p>
+        </div>
+        <div class="faq-item">
+          <h3>What devices are supported?</h3>
+          <p>Kangsium games are built for Android phones and tablets and are available worldwide on the Google Play Store.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Are the games suitable for children?</h3>
+          <p>Our games are made for a general audience and rated for ages 13 and up. They are simple and family-friendly, though they do display ads.</p>
+        </div>
+        <div class="faq-item">
+          <h3>How can I get support?</h3>
+          <p>Email us at <a href="mailto:jason@kangsium.com">jason@kangsium.com</a> with any question, bug report, or piece of feedback — we read every message.</p>
+        </div>
+      </div>
+    </section>
   </main>
 
   <footer>
-    <p>&copy; 2026 Kangsium</p>
+    <div class="links">
+      <a href="https://policy.kangsium.com/">Privacy &amp; Terms</a>
+      <a href="mailto:jason@kangsium.com">Contact</a>
+    </div>
+    <p>&copy; 2026 Kangsium · Made in Seoul</p>
   </footer>
 </body>
 </html>
