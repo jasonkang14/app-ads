@@ -20,8 +20,11 @@ Hosted via GitHub Pages at **[app.kangsium.com](https://app.kangsium.com)**.
 | Cactus Hop | Live | [com.kangsium.cactus_hop](https://play.google.com/store/apps/details?id=com.kangsium.cactus_hop) |
 | Neon Bricks | Live | [com.kangsium.neonbricks](https://play.google.com/store/apps/details?id=com.kangsium.neonbricks) |
 | Neon Snake | Live | [com.kangsium.neonsnake](https://play.google.com/store/apps/details?id=com.kangsium.neonsnake) |
-| Color Match Tap | Coming Soon | — |
-| Fortune Cookie | Coming Soon | — |
+| Color Match Tap | Live | [com.kangsium.colormatchtap](https://play.google.com/store/apps/details?id=com.kangsium.colormatchtap) |
+| Fortune Cookie | Live | [com.kangsium.fortunecookie](https://play.google.com/store/apps/details?id=com.kangsium.fortunecookie) |
+| Sky Stack | Live | [com.kangsium.sky_stack](https://play.google.com/store/apps/details?id=com.kangsium.sky_stack) |
+| Wordling | Live | [com.kangsium.wordling](https://play.google.com/store/apps/details?id=com.kangsium.wordling) |
+| Daily Glow | Live | [com.kangsium.dailyglow](https://play.google.com/store/apps/details?id=com.kangsium.dailyglow) |
 
 ## Development
 
