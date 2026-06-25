@@ -9,7 +9,8 @@ Hosted via GitHub Pages at **[app.kangsium.com](https://app.kangsium.com)**.
 | File | Purpose |
 | --- | --- |
 | `index.html` | Static landing page listing the games, with links to their Google Play listings. Includes canonical, Open Graph/Twitter, and JSON-LD (`ItemList` of games) metadata for SEO. |
-| `app-ads.txt` | Authorized sellers declaration ([app-ads.txt spec](https://iabtechlab.com/ads-txt/)) for AdMob/Google Ads. |
+| `app-ads.txt` | Authorized sellers declaration ([app-ads.txt spec](https://iabtechlab.com/ads-txt/)) for AdMob/Google Ads (apps). |
+| `ads.txt` | Authorized sellers declaration for the website's AdSense inventory (`pub-2002611361597206`). |
 | `robots.txt` | Allows all crawlers and points to `sitemap.xml`. |
 | `sitemap.xml` | XML sitemap for search engines (the single landing-page URL). |
 | `llms.txt` | LLM-friendly site summary + game index ([llmstxt.org](https://llmstxt.org/) format). |
