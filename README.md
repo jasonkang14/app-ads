@@ -21,6 +21,8 @@ Hosted via GitHub Pages at **[app.kangsium.com](https://app.kangsium.com)**.
 
 | Game | Status | Play Store |
 | --- | --- | --- |
+| Sudoku | Live | [com.kangsium.sudoku](https://play.google.com/store/apps/details?id=com.kangsium.sudoku) |
+| Bubble Pop | Live | [com.kangsium.bubblepop](https://play.google.com/store/apps/details?id=com.kangsium.bubblepop) |
 | Memory Match | Live | [com.kangsium.memory_match](https://play.google.com/store/apps/details?id=com.kangsium.memory_match) |
 | Cactus Hop | Live | [com.kangsium.cactus_hop](https://play.google.com/store/apps/details?id=com.kangsium.cactus_hop) |
 | Neon Bricks | Live | [com.kangsium.neonbricks](https://play.google.com/store/apps/details?id=com.kangsium.neonbricks) |

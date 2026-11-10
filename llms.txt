@@ -4,6 +4,8 @@
 
 ## Games
 
+- [Sudoku](https://play.google.com/store/apps/details?id=com.kangsium.sudoku): Classic 9×9 sudoku with 4 levels, unique-solution grids, and a Daily Puzzle streak.
+- [Bubble Pop](https://play.google.com/store/apps/details?id=com.kangsium.bubblepop): Classic bubble shooter — match three or more colors to pop them and clear the board.
 - [Memory Match](https://play.google.com/store/apps/details?id=com.kangsium.memory_match): Classic memory matching with 5 difficulty levels and 5 emoji themes.
 - [Cactus Hop](https://play.google.com/store/apps/details?id=com.kangsium.cactus_hop): One-tap endless dodger — hop a cute fox over cacti and unlock more hoppers by score.
 - [Neon Bricks](https://play.google.com/store/apps/details?id=com.kangsium.neonbricks): Retro brick-breaker with glowing neon visuals, power-ups, and offline play.
